@@ -33,7 +33,7 @@ var processor = unified()
 
 
 // Example
-var markdownContent = "Here are some videos: [Video 1](@https://example.com/video1) and [Video 2](@https://example.com/video2)";
+var markdownContent = "Here are some videos: [Video 1](@https://example-video1.com) and [Video 2](@https://example-video2.com)";
 processor.process(markdownContent, function (err, file) {
  if (err) {
   console.error("Error processing Markdown:", err);

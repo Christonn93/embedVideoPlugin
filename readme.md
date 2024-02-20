@@ -48,6 +48,9 @@ Join us today and start your journey towards becoming a skilled software enginee
 <iframe src="https://example.com/video1" title="Video 1"></iframe>
 ```
 
+The function its running is not the one using remark ecosystem, its using the plain vanilla js. That is located in the file `autoEmbededVideos.js`
+
 The html file is empty at first, but after running the script the html file will have content similar to what the console log outputs.
 
-NB! This example does not change any other markdown text, just the video link. To use this to convert the rest of the markdown into html, it have to be done some more work on the code. OR it can be implemented into your existing work.
+**NB!**
+This example does not change any other markdown text, just the video link. To use this to convert the rest of the markdown into html, it have to be done some more work on the code. OR it can be implemented into your existing work.

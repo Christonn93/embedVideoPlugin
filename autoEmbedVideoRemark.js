@@ -13,8 +13,8 @@ function markdownToIframePlugin() {
    // If the node is a link with '@' prefix
    if (node.type === "link" && node.url.startsWith("@")) {
     // Extract title and src from the link
-    var title = node.children[0].value;
-    var src = node.url.substring(1); // Remove '@' prefix
+    const title = node.children[0].value;
+    const src = node.url.substring(1); // Remove '@' prefix
 
     // Replacing the node with an iframe node
     node.type = "html";
@@ -26,14 +26,14 @@ function markdownToIframePlugin() {
 }
 
 // Create a new processor with remark
-var processor = unified()
+const processor = unified()
  .use(remarkParse) 
  .use(markdownToIframePlugin) 
  .use(remarkStringify); 
 
 
 // Example
-var markdownContent = "Here are some videos: [Video 1](@https://example-video1.com) and [Video 2](@https://example-video2.com)";
+const markdownContent = "Here are some videos: [Video 1](@https://example-video1.com) and [Video 2](@https://example-video2.com)";
 processor.process(markdownContent, function (err, file) {
  if (err) {
   console.error("Error processing Markdown:", err);

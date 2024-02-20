@@ -1,0 +1,25 @@
+{
+  "name": "plugin-ex",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "neo-async": "^2.6.2",
+    "rehype-stringify": "^10.0.0",
+    "remark": "^15.0.1",
+    "remark-directive": "^3.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "remark-webembed": "^0.0.1",
+    "retext": "^9.0.0",
+    "retext-english": "^5.0.0",
+    "unified": "^11.0.4",
+    "unist-util-visit": "^5.0.0",
+    "vfile-reporter": "^8.1.0"
+  }
+}
